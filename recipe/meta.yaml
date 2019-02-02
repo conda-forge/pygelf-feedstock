@@ -1,5 +1,5 @@
 {% set name = "pygelf" %}
-{% set version = "0.3.4" %}
+{% set version = "0.3.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f2e2af0d2731b7787b568120ec7bf5ca34ca3958e6b8bc171d0875a6ddb6d505
+  sha256: d72772b2facbf6accdd667d06bd062dee23249209ebdb6e70a5c53bee73b5e1f
 
 build:
   noarch: python
