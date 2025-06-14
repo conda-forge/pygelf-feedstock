@@ -1,5 +1,5 @@
 {% set name = "pygelf" %}
-{% set version = "0.3.6" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3e5bc59e3b5a754556a76ff2c69fcf2003218ad7b5ff8417482fa1f6a7eba5f9
+  sha256: 8ed972563be3c8f168483f01dbf522b6bc697959c97a3f4881324b3f79638911
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
